@@ -5,7 +5,7 @@ import numpy as np
 from PIL import Image
 import argparse
 
-def load_and_prepare_image(image_path, size=(256, 256)):
+def load_and_prepare_image(image_path, size=(512, 512)):
     """Load an image file and prepare it for the model."""
     img = load_img(image_path, target_size=size)
     img = img_to_array(img)
